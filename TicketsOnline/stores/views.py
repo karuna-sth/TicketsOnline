@@ -6,9 +6,9 @@ def index(request):
     context = {}
     return render(request, 'stores/index.html', context)
 
-def carts(request):
+def event(request):
     context = {}
-    return render(request, 'stores/carts.html', context)
+    return render(request, 'stores/event.html', context)
 
 def checkout(request):
     context = {}
