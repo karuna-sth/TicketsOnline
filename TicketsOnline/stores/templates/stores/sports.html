@@ -3,8 +3,208 @@
 {% block content %}
 
 
+<!-- navbar starts -->
+<div class="navbar " >
+    <a class="nav-link active"id="R" aria-current="page" href="#">RECOMMENDED</a>
+   <ul class="nav ml-auto">      
+     <li class="nav-item">
+      <a class="nav-link  " href="#football">FOOTBALL</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link "href="#">BASKETBALL</a>
+     </li>        
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          MORE
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">CRICKET</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">HOCKEY</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">GOLF</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">UFC</a></li>
+        </ul>
+      </li>
 
-<h1>Sports here</h1>
+   </ul>
+</div>
+
+
+
+
+<!--grid  -->
+<section>
+<div class="container">
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-md-8">
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'image/front.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'image/cl.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'image/ufc.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+     </div>
+
+  </div>
+  <div class="col-6 col-md-4">
+    <div class="card" style="width: 22rem; height: 18rem;">
+      <img src="{% static 'image/pic1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">NBA Finals</h5>
+        <p class="card-text">The golden ticket of offers <br>is here</p>
+        <a href="#" class="btn btn-primary"style="position: absolute;right: 10px;top: 230px;width: 8rem;">BUY NOW</a> 
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+ <div class="row">
+  <div class="col-6 col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <h6>FOOTBALL</h6>
+      </div>
+      <img src="{% static 'image/HK.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">UEFA NATIONS LEAGUE</h5>
+        <p class="card-text">50 international goals now for <a href="#"id="hk">HKANE</a> in just 71 appearance.</p>
+        <a href="#" class="btn btn-primary">BUY TICKETS</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 col-md-4">
+    
+    <div class="card">
+      <div class="card-header">
+        <h6>GOLF </h6>
+      </div>
+      <img src="{% static 'image/golf.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CANADIAN OPEN</h5>
+        <p class="card-text"><a href="#"id="hk">Rory McIlroy</a>: LIV Golf players doing it for 'boatloads of cash'</p>
+        <a href="#" class="btn btn-primary">BUY TICKETS</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 col-md-4">
+    <div class="card">
+      <div class="card-header">
+       <h6>CRICKET</h6> 
+      </div>
+      <img src="{% static 'image/cricket.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ONE DAY INTERNATIONAL</h5>
+        <p class="card-text"><a href="#"id="hk">Babar</a> has now scored more than 1000 runs in ODIs.</p>
+        <a href="#" class="btn btn-primary">BUY TICKETS</a>
+      </div>
+    </div>
+
+  </div> 
+  </div>
+  
+</section>
+<br>
+<!-- row columns -->
+<!-- inside cards -->
+<div class="container">
+<p id="football">FOOTBALL</p>
+<br>
+<div class="container">
+<div class="row row-cols-3">
+<div class="col">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/world1.jpg' %}" class="card-img-top" height="200rem" alt="...">
+    <div class="card-body">
+      <h2 class="card-text1">INTERNATIONAL (NATIONAL)</h2>
+     
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>
+  </div>
+  
+</div>
+<div class="col">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/laliga.jpg' %}" class="card-img-top"height="200rem" alt="...">
+    <div class="card-body">
+      <h2 class="card-text1">LALIGA</h2>
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>
+  </div>
+  
+</div>
+<div class="col">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/pl.jpg' %}" class="card-img-top" height="200rem" alt="...">
+    <div class="card-body">
+      <h2 class="card-text1">PREMIER LEAGUE</h2>
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>
+  </div>
+  
+</div>
+
+<div class="col"style ="padding-top:20px;">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/cl2.jpg' %}" class="card-img-top" height="200rem" alt="...">
+    <div class="card-body">
+      <h2 class="card-text1">CHAMPIONS LEAGUE</h2>
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>  
+  </div>
+  
+</div>
+<div class="col" style ="padding-top:20px;">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/europa.jpg' %}" class="card-img-top" height="200rem" alt="EUROPA LEAGUE">
+    <div class="card-body">
+      <h2 class="card-text1">EUROPA LEAGUE</h2>
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>
+  </div>
+
+</div>
+<div class="col"style ="padding-top:20px;">
+  <div class="card" style="width: 22rem;">
+    <img src="{% static 'image/world.jpg' %}" class="card-img-top" height="200rem" alt="INTERNATIONAL CLUBS">
+    <div class="card-body">
+      <h2 class="card-text1">INTERNATIONAL (CLUBS)</h2>           
+      <a href="#" class="btn btn-primary">BUY TICKETS</a>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+</div>
+
 
 
 

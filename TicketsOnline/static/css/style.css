@@ -139,7 +139,7 @@ body
 }
 #about
 {
-	background: url(../image/bg2.jpeg) no-repeat;
+	background: rgba(223, 210, 210, 0.7);
 	background-size: cover;
 }
 .about
