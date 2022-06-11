@@ -99,6 +99,9 @@ color: darkgrey;
 .col-md-4 a {
     color: #eddfdf;
 }
+.card-body{
+    color: black;
+}
 .card-text{
     height: 60px;
 }
