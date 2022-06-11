@@ -75,12 +75,20 @@ color: darkgrey;
   transition: transform 1s, filter 5s ease-in-out;
   
   }  
+  .card-body{
+    color: black;
+}
+.card-text{
+    height: 60px;
+}
  .card-text1{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: black;
-  }
+  
+ }
+
+
 
  /* footer */
  footer {
@@ -99,12 +107,6 @@ color: darkgrey;
 }
 .col-md-4 a {
     color: #eddfdf;
-}
-.card-body{
-    color: black;
-}
-.card-text{
-    height: 60px;
 }
 
 
