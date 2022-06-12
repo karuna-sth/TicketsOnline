@@ -59,7 +59,11 @@ color: darkgrey;
 
 #football{
     font-family: 'Acme', sans-serif;
-    font-size: 28px;
+    font-size: 34px;
+}
+#basketball{
+    font-family: 'Acme', sans-serif;
+    font-size: 34px;
 }
 #hk{
     text-decoration: none;
@@ -76,9 +80,11 @@ color: darkgrey;
   
   }  
   .card-body{
+  
     color: black;
 }
 .card-text{
+   
     height: 60px;
 }
  .card-text1{
@@ -87,6 +93,19 @@ color: darkgrey;
     font-weight: bold;
   
  }
+ h5, h5 {
+    font-size: 1.25rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+}
+ .h6, h6 {
+    font-size: 1rem;
+    color:black;
+    
+  }
+ 
+ 
+ 
 
 
 
