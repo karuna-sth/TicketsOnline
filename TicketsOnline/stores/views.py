@@ -22,6 +22,6 @@ def sports(request):
     context = {}
     return render(request, 'stores/sports.html', context)
 
-def football(request):
+def register(request):
     context = {}
-    return render(request, 'stores/football.html', context)
+    return render(request, 'stores/register.html', context)
