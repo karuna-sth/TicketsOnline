@@ -25,3 +25,7 @@ def sports(request):
 def football(request):
     context = {}
     return render(request, 'stores/football.html', context)
+
+def bookticket(request):
+    context = {}
+    return render(request, 'stores/bookticket.html', context)    

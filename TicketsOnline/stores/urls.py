@@ -9,6 +9,7 @@ urlpatterns = [
 	path('event/', views.event, name="event"),
 	path('checkout/', views.checkout, name="checkout"),
 	path('sports/', views.sports, name="sports"),
-	path('sports/football', views.football, name="football")
+	path('sports/football', views.football, name="football"),
+	path('sports/bookticket', views.bookticket, name="bookticket")
 
 ]
