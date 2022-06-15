@@ -24,12 +24,8 @@ def sports(request):
 
 def register(request):
     context = {}
-<<<<<<< HEAD
-    return render(request, 'stores/football.html', context)
+    return render(request, 'stores/register.html', context)
 
 def bookticket(request):
     context = {}
-    return render(request, 'stores/bookticket.html', context)    
-=======
-    return render(request, 'stores/register.html', context)
->>>>>>> 440dcce667b84d3f51988692eba65f2b830a7a2c
+    return render(request, 'stores/bookticket.html', context)
