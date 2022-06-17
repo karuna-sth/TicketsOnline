@@ -374,3 +374,20 @@ footer
 element {
 	margin-left: -19.5em;
 }
+/* friday june 17 */
+.card{
+	height: 170px;
+	display: flex;
+	overflow: hidden;
+   }
+   .card img{
+	transition: all .2s ease;
+	vertical-align: middle;
+   }
+   .card img:hover{
+	transform:scale(1.5);
+	-ms-transform:scale(1.5); 
+	-moz-transform:scale(1.5); 
+	-webkit-transform:scale(1.5); 
+	-o-transform:scale(1.5);
+   }
