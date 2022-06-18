@@ -3,25 +3,19 @@
     padding: 0%;
     margin: 0%;
 }
-/* body{
-  background: rgb(0, 0, 0);
-  opacity: 0.5;
-} */
-.background-img{
-  
-    background-image: url('{% static "image/champion.jpg" %}');
+#background-img{
+  background-image: url('/static/image/champion.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
-    height: 100vh;
-    
+  height: 100vh;
 }
-/*  */
-
-
+.background-img{
+  background:rgba(0, 0, 0, 0.5);
+}
 .pricing-table{
-  
   font-family: 'Montserrat', sans-serif;
+  height: 700px;
 }
 
 .pricing-table .block-heading {
@@ -49,14 +43,13 @@
 }
 
 .pricing-table .item {
- 
   background-color: #ffffff;
-  box-shadow: 2px 2px 12px  #0d6efd;
+  box-shadow: 2px 2px 12px #0d6efd;
   border-top: 2px solid #5ea4f3;
-  padding: 8px;
+  padding: 30px;
   overflow: hidden;
   position: relative;
-  width: 290px;
+  width: 325px;
   display: grid;
 }
 
@@ -113,14 +106,20 @@
   font-weight: 600;
   padding: 9px 0; 
 }
+.ticket-info{
+  height: 40px;
+}
 .form-select{
-  position: absolute;
-  right: 20px;
-  top: 120px;
   height: 1.9rem;
   width: 5rem !important;
   font-size: 12px !important;
   font-weight: bold !important;
+}
+.ticket-price{
+  float: left;
+}
+.ticket-amount{
+  float: right;
 }
 
 
