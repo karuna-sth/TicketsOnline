@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -28,107 +29,117 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-#R{
+#R {
     padding-left: 130px;
-      color: rgb(74, 106, 133);
+    color: rgb(74, 106, 133);
 }
 
-.navbar,.nav-item{
-    font-family: 'Advent Pro', sans-serif; 
-     font-size: 25px;
-     
-   
+.navbar,
+.nav-item {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 25px;
+
+
 }
-#dropdownMenuLink{
+
+#dropdownMenuLink {
     padding: 10px;
     font-family: 'Advent Pro', sans-serif;
-     font-size: 25px;
-     text-decoration: none;
+    font-size: 25px;
+    text-decoration: none;
     color: darkgrey;
 
 }
-.nav-link{
-text-decoration: none;
-color: darkgrey;
+
+.nav-link {
+    text-decoration: none;
+    color: darkgrey;
 }
 
 
-#football{
+#football {
     font-family: 'Acme', sans-serif;
     font-size: 34px;
 }
-#basketball{
+
+#basketball {
     font-family: 'Acme', sans-serif;
     font-size: 34px;
 }
-#hk{
+
+#hk {
     text-decoration: none;
     color: #007bff;
-  }
+}
 
 
-  
-   .col:hover {
-    -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5);
-  transform: scale(1.075); 
-  transition: transform 1s, filter 5s ease-in-out;
-  
-  }  
-  .card-body{
-  
+
+.col:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.075);
+    transition: transform 1s, filter 5s ease-in-out;
+
+}
+
+.card-body {
+
     color: black;
 }
-.card-text{
-   
+
+.card-text {
+
     height: 60px;
 }
- .card-text1{
+
+.card-text1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 20px;
     font-weight: bold;
-  
- }
- h5, h5 {
+
+}
+
+h5,
+h5 {
     font-size: 1.25rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
 }
- .h6, h6 {
+
+.h6,
+h6 {
     font-size: 1rem;
-    color:black;
-    
-  }
- 
- 
- 
+    color: black;
+
+}
 
 
 
- /* footer */
- footer {
-    background: rgba(0,19,25,0.9);
+
+
+
+/* footer */
+footer {
+    background: rgba(0, 19, 25, 0.9);
     min-height: 662px;
 }
+
 .item5 {
     border-bottom: 1px solid white;
     padding: 100px 0;
 }
+
 .item5 a {
     padding: 10px;
     line-height: 3;
     text-decoration: none;
     font-size: 20px;
 }
+
 .col-md-4 a {
     color: #eddfdf;
 }
-
-
-
-
-
