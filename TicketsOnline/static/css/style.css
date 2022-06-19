@@ -385,18 +385,18 @@ element {
 }
 
 /* friday june 17 */
-.card {
+.small-card {
 	height: 315px;
 	display: flex;
 	overflow: hidden;
 }
 
-.card img {
+.small-card img {
 	transition: all .2s ease;
 	vertical-align: middle;
 }
 
-.card img:hover {
+.small-card img:hover {
 	transform: scale(1.5);
 	-ms-transform: scale(1.2);
 	-moz-transform: scale(1.2);
@@ -405,21 +405,3 @@ element {
 }
 
 
-.big-card {
-    height: 425px;
-    display: flex;
-    overflow: hidden;
-}
-
-.big-card img {
-    transition: all .2s ease;
-    vertical-align: middle;
-}
-
-.big-card img:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
