@@ -2,6 +2,7 @@ from django.urls import path
 
 from . import views
 
+app_name = 'stores'
 urlpatterns = [
         #Leave as empty string for base url
 	path('', views.index, name="index"),
@@ -9,7 +10,6 @@ urlpatterns = [
 	path('event/', views.event, name="event"),
 	path('checkout/', views.checkout, name="checkout"),
 	path('sports/', views.sports, name="sports"),
-	path('register', views.register, name="register"),
 	path('sports/bookticket', views.bookticket, name="bookticket"),
 
 ]

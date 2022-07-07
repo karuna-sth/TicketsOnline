@@ -22,10 +22,7 @@ def sports(request):
     context = {}
     return render(request, 'stores/sports.html', context)
 
-def register(request):
-    context = {}
-    return render(request, 'stores/register.html', context)
-
 def bookticket(request):
     context = {}
     return render(request, 'stores/bookticket.html', context)
+
