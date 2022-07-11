@@ -45,14 +45,20 @@
 						<a class="nav-link" href="#">Theater</a>
 					</li>
 					</ul>
+					{% if user.is_authenticated %}
 					<form class="form-inline my-2 my-lg-0">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModal">Log In / Register</button>
-					</form>
-				</div>
+						<a href="{% url 'users:logout' %}"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Log Out</button></a>	
+						</form>
+					{% else %}
+						<form class="form-inline my-2 my-lg-0">
+						<a href="{% url 'users:register_user'%}"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Log In / Register</button></a>	
+						</form>
+					{% endif %}
+				</div> 
 				</nav>
 
 				<!-- pop out of bookticket starts-->
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -61,21 +67,23 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 						</div>
-						<div class="modal-body">
-						<input type="email" name="em" placeholder="Enter Your Email">
-						<input type="password" name="em" placeholder="Enter Your Password"><br><br>
-						<button type="button" class="btn btn-primary btn-lg btn-block"> Sign in with <i class="fa fa-facebook-square" aria-hidden="true"></i> </button><br>
-						<p>OR</p>
-						<button type="button" class="btn btn-outline-primary btn-lg btn-block"> Sign in with <i class="fa fa-google-plus" aria-hidden="true"></i> </button><br>
-						<p>Click Here to<a href="{% url 'users:register'%}"> Register</a></p>
-						
-						</div>
-						<div class="modal-footer">
-						<button type="button" class="btn btn-primary">Sign In</button>
-						</div>
+						<form action="" method="POST">
+							{% csrf_token %}
+							<div class="modal-body">
+								<input type="text" name="username" placeholder="Enter Your Username">
+								<input type="password" name="password" placeholder="Enter Your Password"><br><br>
+								<button type="button" class="btn btn-primary btn-lg btn-block"> Sign in with <i class="fa fa-facebook-square" aria-hidden="true"></i> </button><br>
+								<p>OR</p>
+								<button type="button" class="btn btn-outline-primary btn-lg btn-block"> Sign in with <i class="fa fa-google-plus" aria-hidden="true"></i> </button><br>
+								<p>Click Here to<a href="{% url 'users:register_user'%}"> Register</a></p>
+							</div>
+							<div class="modal-footer">
+								<input type="button" value="Sign In" class="btn btn-primary">
+							</div>
+						</form>
+					</div> 
 					</div>
-					</div>
-				</div>
+				</div> -->
 				<!-- pop out of bookticket ends-->
 
 				{% block content %}
