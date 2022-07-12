@@ -2,15 +2,28 @@ from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.contrib.auth.models import User, auth
 
 # Create your views here.
 def register_user(request):
     context = {}
-    
-    return render(request, 'authenticate/register_user.html', context)
+    if request.method == "POST":
+        first_name = request.POST['firstName']
+        last_name = request.POST['lastName']
+        email = request.POST['email']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+        user = User.objects.create_user(username= email, password=password1, email= email, first_name=first_name, last_name=last_name)
+        user.save()
+        user = authenticate(request, username=email, password=password1)
+        login(request, user)
+        return redirect("stores:index")
+        # messages.success(request, ("Registration Successfull! you are now logged in!"))
+    else:    
+        return render(request, 'authenticate/register_user.html', context)
     
 
-def login_users(request):
+def login_users(request): 
     context = {}
     if request.method == "POST":
         username = request.POST['username']

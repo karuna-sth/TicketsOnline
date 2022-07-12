@@ -46,9 +46,10 @@
 					</li>
 					</ul>
 					{% if user.is_authenticated %}
+					<h5 color="white">{{ user.first_name }}</h5>
 					<form class="form-inline my-2 my-lg-0">
 						<a href="{% url 'users:logout' %}"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Log Out</button></a>	
-						</form>
+					</form>
 					{% else %}
 						<form class="form-inline my-2 my-lg-0">
 						<a href="{% url 'users:register_user'%}"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Log In / Register</button></a>	
