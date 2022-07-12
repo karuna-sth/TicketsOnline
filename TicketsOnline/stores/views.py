@@ -26,3 +26,5 @@ def bookticket(request):
     context = {}
     return render(request, 'stores/bookticket.html', context)
 
+
+

@@ -13,9 +13,6 @@
 		<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
 		<link rel="stylesheet" type="text/css" href={% static 'css/sports.css' %}>
 		<link rel="stylesheet" type="text/css" href={% static 'css/bookticket.css' %}>
-		<link rel="stylesheet" type="text/css" href={% static 'css/holiday.css' %}>
-
-	
 		<title>TICKETS ONLINE</title>
 	</head>
 	{% block css%}
@@ -40,14 +37,17 @@
 						<a class="nav-link" href="sports">Sports</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="holiday">Concert</a>
+						<a class="nav-link" href="{% url 'holiday:holiday' %}">Holiday</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Theater</a>
 					</li>
 					</ul>
 					{% if user.is_authenticated %}
-					<h5 color="white">{{ user.first_name }}</h5>
+				
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<h5 color="white" style=" margin:0px 15px 0px 15px;"> {{ user.first_name }}</h5>
+					
 					<form class="form-inline my-2 my-lg-0">
 						<a href="{% url 'users:logout' %}"><button class="btn btn-outline-success my-2 my-sm-0" type="button">Log Out</button></a>	
 					</form>

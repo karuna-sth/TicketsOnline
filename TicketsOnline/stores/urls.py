@@ -11,5 +11,4 @@ urlpatterns = [
 	path('checkout/', views.checkout, name="checkout"),
 	path('sports/', views.sports, name="sports"),
 	path('sports/bookticket', views.bookticket, name="bookticket"),
-
 ]

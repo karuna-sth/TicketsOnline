@@ -13,10 +13,18 @@ def register_user(request):
         email = request.POST['email']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-        user = User.objects.create_user(username= email, password=password1, email= email, first_name=first_name, last_name=last_name)
-        user.save()
-        user = authenticate(request, username=email, password=password1)
-        login(request, user)
+        if password1 == password2:
+            if User.objects.filter(username=email).exists():
+                messages.info(request, ("Username already exists, Try another"))
+                return render(request, 'authenticate/register_user.html', context)
+            else:
+                user = User.objects.create_user(username= email, password=password1, email= email, first_name=first_name, last_name=last_name)
+                user.save()
+                user = authenticate(request, username=email, password=password1)
+                login(request, user)
+        else:
+            messages.info(request, ("Password dont match. Please try again."))
+            return render(request, 'authenticate/register_user.html', context)
         return redirect("stores:index")
         # messages.success(request, ("Registration Successfull! you are now logged in!"))
     else:    
@@ -33,7 +41,7 @@ def login_users(request):
             login(request, user)
             return redirect("stores:index")
         else:
-            messages.success(request, ("Username or Password is incorrect. Please try again."))
+            messages.info(request, ("Username or Password is incorrect. Please try again."))
             return redirect('users:login_users')
     else:
         return render(request, 'authenticate/login_users.html', context)

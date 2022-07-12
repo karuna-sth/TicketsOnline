@@ -7,9 +7,7 @@ width: 100%;
 background-size: cover;
 height: 380px;
 position: relative;
-
-
-  
+ 
 }
 #top-img::before {
     content: '';
