@@ -1,0 +1,213 @@
+{% extends 'stores/index.html' %}
+{% load static %}
+{% block content %}
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="holiday.css">
+    <title>Holidays</title>
+</head>
+<body> 
+ <div id="top-img">
+  <h2 id="holi">Holiday Tour Package</h2>  
+  <div class="input-group mb-3">
+    
+    <input type="text" class="form-control" placeholder="Where you want to go?" aria-label="Example text with button addon" aria-describedby="button-addon1">
+    <button class="btn btn-dark" type="button" id="button-addon1">Search</button>
+  </div>
+    
+  </div>
+  <br>
+  <!-- cards -->
+  
+<div class="cards">
+<p class="t1">International Tour Packages</p>
+
+
+  <div class="card" style="width: 11rem;">
+    <img src="{% static 'image/maldives.png' %}" class="card-img-top" alt="maldives">
+    <div class="card-body">
+      <p class="card-text"><h5>Maldives</h5></p>
+      <h6 class="card-subtitle mb-2 text-muted">4 Nights/5 Days</h6>
+      <br>
+      <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+      <p class="card-text t3">$500</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 11rem;">
+    <img src="{% static 'image/switzerland.png' %}" class="card-img-top" alt="switzerland">
+     
+        <div class="card-body">
+            <p class="card-text"><h5>Switzerland</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">5 Nights/6 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$1000</p>
+          </div>
+  </div>
+  
+
+  <div class="card" style="width: 11rem;">
+    <img src="{% static 'image/malaysia.png' %}" class="card-img-top" alt="malaysia">
+    
+        
+            <div class="card-body">
+                <p class="card-text"><h5>Malaysia</h5></p>
+                <h6 class="card-subtitle mb-2 text-muted">5 Nights/6 Days</h6>
+                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+                <p class="card-text t3">$600</p>
+              </div>
+    </div>
+  
+
+  <div class="card" style="width: 11rem;">
+    <img src="{% static 'image/singapore.png' %}" class="card-img-top" alt="singapore">
+   
+        <div class="card-body">
+            <p class="card-text"><h5>Singapore</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">5 Nights/6 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$700</p>
+          </div>
+    </div>
+   
+
+</div>
+
+<div class="card form-card" style="width: 30rem; ">
+    <div class="card-body">
+      <h4 class="card-title" style="text-align:center;">Want to Go For A Memorable Holiday?</h4>
+      <h6 class="card-subtitle mb-2 text-muted" style="text-align:center;">Provide Your Details to Know Best Holiday Deals</h6>
+      <br>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          International
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          National
+        </label>
+      </div>
+      <br>
+      <br>
+      <div class="mb-6">
+        <label for="formGroupExampleInput" class="form-label">Package Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Package Name / Destination Name">
+      </div>
+      <br>
+      <div class="mb-6">
+        <label for="formGroupExampleInput2" class="form-label">City Of Departure</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Choose your Destination</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="3">Four</option>
+          </select>
+      </div>
+      <br>
+      <div class="mb-6">
+        <label for="formGroupExampleInput2" class="form-label">Date Of Departure</label>
+        <select class="form-select" aria-label="Disabled select example" disabled>
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </div>
+
+      <br>
+      <br>
+      <h5>Contact Detail</h3>
+      <div class="input-group">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+      </div>
+      <br>
+      <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      
+      <div class="col-md-6">
+        <label for="validationCustomphonenumber" class="form-label">Phone Number</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">+977</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Phone Number
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-12" style="display:grid; ">
+        <button class="btn btn-primary" type="submit" style="background-color: blueviolet;">Submit</button>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+
+  <br>
+  <div class="cards2">
+    <p class="t2">National Tour Packages</p>
+    
+    
+      <div class="card" style="width: 11rem;">
+        <img src="{% static 'image/pic13.jpg' %}" class="card-img-top" alt="pokhara">
+        <div class="card-body">
+            <p class="card-text"><h5>Pokhara</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">4 Nights/5 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$25</p>
+          </div>
+      </div>
+    
+      <div class="card" style="width: 11rem;">
+        <img src="{% static 'image/pic14.jpg' %}" class="card-img-top" alt="kathmandu" height="115px">
+        <div class="card-body">
+            <p class="card-text"><h5>Kathmandu</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">4 Nights/5 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$30</p>
+          </div>
+        </div>
+      
+    
+      <div class="card" style="width: 11rem;">
+        <img src="{% static 'image/pic15.jpg' %}"class="card-img-top" alt="bhaktapur">
+        <div class="card-body">
+            <p class="card-text"><h5>Bhaktapur</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">4 Nights/5 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$20</p>
+          </div>
+      </div>
+    
+      <div class="card" style="width: 11rem;">
+        <img src="{% static 'image/pic13.jpg' %}" class="card-img-top" alt="solukhumbu" height="115px">
+        <div class="card-body">
+            <p class="card-text"><h5>Solukhumbu</h5></p>
+            <h6 class="card-subtitle mb-2 text-muted">4 Nights/5 Days</h6>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted">Starting<br>From</h6>
+            <p class="card-text t3">$50</p>
+          </div>
+        
+      </div>   
+    
+    </div>
+   
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</body>
+{% endblock content %}
